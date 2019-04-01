@@ -19,7 +19,7 @@ A web server with <a href="https://www.php.net/">PHP</a> and a server that can r
 
 3. Generate a safe token on <a href="https://www.grc.com/passwords.htm">https://www.grc.com/passwords.htm</a> and paste that in your `config/config.php` file and into `server/env.js`.
 
-4. Copy the contents of the `server` folder onto your host / server (the machine that will ping to Pingui)
+4. Copy the contents of the `server` folder onto your host / server (the machine that will ping to Pingui) and run `npm i`
 
 5. Edit `server/env.js` to make sure the Pingui url is correct (for example: http://localhost/Pingui/core/pingui.core.php)
 
