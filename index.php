@@ -52,6 +52,7 @@ require('config/define.php');
 
     <script src="js/pingui.js"></script>
     <script src="<?= USECDN == true ? 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js' : 'js/moment.min.js' ?>"></script>
+    <script src="<?= USECDN == true ? 'https://momentjs.com/downloads/moment-timezone-with-data.min.js' : 'js/moment-timezone.min.js' ?>"></script>
 
 </body>
 </html>
