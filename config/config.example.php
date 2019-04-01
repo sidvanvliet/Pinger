@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_SESSION['csrf_token'])) {
-    session_unset('csrf_token');
+    unset($_SESSION['csrf_token']);
 
     # Pingui Configuration
     $settings = array(
