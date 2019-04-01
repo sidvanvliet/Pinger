@@ -2,6 +2,16 @@
 
 require('../config/define.php');
 
+if( isset($_GET['status'] ))
+{
+    if( !file_exists('latest.dat') ){
+        echo "not-yet-ran";
+    } else {
+        echo file_get_contents("latest.dat");
+    }
+    exit();
+}
+
 // Exit if there's not even anything provided.
 if( !isset($_GET['token']) || $_GET['token'] !== TOKEN )
 {

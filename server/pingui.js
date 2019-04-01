@@ -7,7 +7,7 @@ ping();
 
 setInterval(() => {
     ping();
-}, (config.interval * 1000));
+}, 10000);
 
 function ping() {
 

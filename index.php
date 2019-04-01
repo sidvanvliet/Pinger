@@ -38,7 +38,7 @@ require('config/define.php');
     <div class="container mt-5">
     
         <h1 class="font-weight-bold display-4"><?= NAME ?></h1>
-        <div id="last-ping">Last update received <span id="moment-timeago">...</span></div>
+        <div id="last-ping">Last update received: <span id="received" class="font-weight-bold">...</span></div>
 
         <hr class="mb-3">
 
