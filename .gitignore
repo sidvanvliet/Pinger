@@ -1,4 +1,5 @@
 /node_modules
+/core/latest.dat
 /config/config.php
 npm-debug.log
 yarn-error.log
