@@ -1,4 +1,6 @@
 /node_modules
+/server/node_modules
+/server/env.js
 /core/latest.dat
 /config/config.php
 npm-debug.log

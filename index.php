@@ -26,6 +26,9 @@ require('config/define.php');
         #host-status.offline{
             background-color:#ff4757;
         }
+        #host-status.checking{
+            background-color:#ccc;
+        }
     </style>
 
 </head>
@@ -39,7 +42,7 @@ require('config/define.php');
 
         <hr class="mb-3">
 
-        <div id="host-status" class="online">Up & running</div>
+        <div id="host-status" class="checking">Checking..</div>
 
         <?php if (GITLINK == true) { ?>
             <div class="mt-5 small">Powered by <a href="https://github.com/sidvanvliet/Pingui" target="_blank">Pingui</a> by Sid van Vliet</div>
