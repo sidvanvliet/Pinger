@@ -33,7 +33,11 @@ function putPing(){
     $latest = fopen('latest.dat', 'w');
     if($latest)
     {
-        fwrite($latest, date("Y-m-d H:i:s"));
+        $timezone = "Europe/Amsterdam";
+        $datetime = new DateTime("now", new DateTimeZone($timezone)); //first argument "must" be a string
+        $datetime->setTimestamp(time());
+
+        fwrite($latest, $datetime->format("Y-m-d H:i:s"));
         echo "OK";
     } else {
         echo "Unable to write..";

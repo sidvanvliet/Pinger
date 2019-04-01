@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 document.querySelector('#host-status').innerHTML = 'Waiting for first ping';
             } else {
                 
-                if ( moment(request.responseText).isAfter(moment().subtract(30, 'seconds')) == false ){
+                if ( moment(request.responseText).tz('Europe/Amsterdam').isAfter(moment().subtract(30, 'seconds')) == false ){
                     setOffline(request.responseText);
                 } else {
                     setOnline();
