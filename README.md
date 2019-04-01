@@ -15,14 +15,15 @@ A web server with <a href="https://www.php.net/">PHP</a> and a server that can r
 # Installation
 1. <a href="https://github.com/sidvanvliet/Pingui/archive/master.zip">Download</a> this repository and unzip the files in your web server's web folder.
 
+2. Rename `config/config.example.php` to `config/config.php` and rename `server/env.example.js` to `server/env.js`
 
-2. Generate a safe token on <a href="https://www.grc.com/passwords.htm">https://www.grc.com/passwords.htm</a> and paste that in your `config/config.php` file and into `server/env.js`.
+3. Generate a safe token on <a href="https://www.grc.com/passwords.htm">https://www.grc.com/passwords.htm</a> and paste that in your `config/config.php` file and into `server/env.js`.
 
-3. Copy the contents of the `server` folder onto your host / server (the machine that will ping to Pingui)
+4. Copy the contents of the `server` folder onto your host / server (the machine that will ping to Pingui)
 
-4. Edit `server/env.js` to make sure the Pingui url is correct (for example: http://localhost/Pingui/core/pingui.core.php)
+5. Edit `server/env.js` to make sure the Pingui url is correct (for example: http://localhost/Pingui/core/pingui.core.php)
 
-5. Run the `pingui.js` script on that host / server (I recommend using Forever.js / PM2 for this)
+6. Run the `pingui.js` script on that host / server (I recommend using Forever.js / PM2 for this)
 
 That's all! Pingui should do the rest for you and your status page should show "Up & running".
 
